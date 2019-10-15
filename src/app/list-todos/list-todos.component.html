@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <thead>
+        <h3>Todo List</h3>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.id}}</td>
+            <td>{{todo.desc}}</td>
+            <td>{{todo.isDone.toString()}}</td>
+            <td>{{todo.date}}</td>
+        </tr>
+    </tbody>
+</table>
